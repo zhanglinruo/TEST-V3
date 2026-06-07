@@ -1,0 +1,40 @@
+model:
+  default: qianfan-code-latest
+  provider: custom:qianfan
+
+custom_providers:
+  - name: qianfan
+    base_url: ${OPENAI_BASE_URL}
+    api_key: ${OPENAI_API_KEY}
+
+terminal:
+  backend: local
+  cwd: .
+  timeout: 180
+
+memory:
+  memory_enabled: false
+  user_profile_enabled: false
+
+agent:
+  max_turns: 60
+
+mcp_servers:
+  superset:
+    command: "C:/Users/Zhang Linruo/.local/bin/uv.exe"
+    args: ["tool", "run", "mcp-superset", "--transport", "stdio"]
+    env:
+      SUPERSET_BASE_URL: "${SUPERSET_BASE_URL}"
+      SUPERSET_USERNAME: "${SUPERSET_USERNAME}"
+      SUPERSET_PASSWORD: "${SUPERSET_PASSWORD}"
+      SUPERSET_AUTH_PROVIDER: "${SUPERSET_AUTH_PROVIDER}"
+      NO_PROXY: "127.0.0.1,localhost"
+      no_proxy: "127.0.0.1,localhost"
+      HTTP_PROXY: ""
+      HTTPS_PROXY: ""
+      ALL_PROXY: ""
+      http_proxy: ""
+      https_proxy: ""
+      all_proxy: ""
+    timeout: 180
+    connect_timeout: 90
