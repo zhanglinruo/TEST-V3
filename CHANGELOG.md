@@ -4,7 +4,7 @@ All notable project changes are tracked here so contributors can understand prod
 
 ## Unreleased
 
-- Add future changes here before opening a pull request or pushing a commit.
+- Document target AI+BI workflow, architecture boundaries, ADR, and parallel workstreams.
 
 ## 2026-06-07
 
