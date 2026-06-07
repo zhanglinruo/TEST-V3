@@ -5,6 +5,7 @@ All notable project changes are tracked here so contributors can understand prod
 ## Unreleased
 
 - Document target AI+BI workflow, architecture boundaries, ADR, and parallel workstreams.
+- Expand README, API docs, development setup, environment example, and frontend architecture docs.
 
 ## 2026-06-07
 
